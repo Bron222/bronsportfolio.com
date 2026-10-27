@@ -908,6 +908,17 @@ ul {
     color: var(--muted);
 }
 
+.contact__email {
+    font-family: var(--font-mono);
+    font-size: 1.05rem;
+    margin: -4px 0 28px;
+}
+
+.contact__email a {
+    color: var(--accent);
+    overflow-wrap: anywhere;
+}
+
 .contact .hero__actions {
     justify-content: center;
     margin-bottom: 0;

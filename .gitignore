@@ -1,9 +1,16 @@
 # Private notes
 NOTES.md
 
-# IDE settings
+# Editor settings
 .vs/
+.vscode/
+.idea/
 
-# Large files (installers and music)
-other/*.exe
-audio/
+# AI assistant files
+.claude/
+CLAUDE.md
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

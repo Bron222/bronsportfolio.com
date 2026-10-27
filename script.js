@@ -8,6 +8,9 @@ document.documentElement.classList.add("js");
         link.href = "mailto:" + address;
         link.removeAttribute("target");
     });
+    document.querySelectorAll(".js-email-text").forEach((el) => {
+        el.textContent = address;
+    });
 })();
 
 // Keep the footer year current
