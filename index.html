@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -193,13 +193,14 @@
                 <p class="section__kicker">03 · Projects</p>
                 <h2>Things I've built</h2>
             </div>
+            <p class="projects__group projects__group--first reveal">Ongoing</p>
             <div class="projects">
                 <article class="card project project--featured reveal">
                     <div class="project__media project__media--phone">
                         <img src="images/projects/todolu.png" alt="Todolu's Today screen showing a task list" loading="lazy">
                     </div>
                     <div class="project__body">
-                        <p class="project__label">Mobile app · In progress</p>
+                        <p class="project__label">Mobile app · In development</p>
                         <h3>Todolu</h3>
                         <p>
                             A Flutter task manager for Android and iOS for planning today and the week ahead.
@@ -221,7 +222,7 @@
                         </div>
                     </div>
                     <div class="project__body">
-                        <p class="project__label">Full-stack web app</p>
+                        <p class="project__label">Full-stack web app · In development</p>
                         <h3>WeatherWebApp</h3>
                         <p>
                             A full-stack weather app built to practice the professional stack end to end:
@@ -232,7 +233,10 @@
                         <a class="link-arrow" href="https://github.com/Bron222/WeatherWebApp" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
                     </div>
                 </article>
+            </div>
 
+            <p class="projects__group reveal">Completed</p>
+            <div class="projects projects--3">
                 <article class="card project reveal">
                     <div class="project__media">
                         <img src="images/projects/ims.png" alt="Inventory Management System showing a stock table" loading="lazy">
@@ -265,6 +269,22 @@
                         <a class="link-arrow" href="https://github.com/Bron222/MenuApp" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
                     </div>
                 </article>
+
+                <article class="card project reveal">
+                    <div class="project__media">
+                        <img src="images/projects/tictactoe.png" alt="Tic-Tac-Toe game board in a console window" loading="lazy">
+                    </div>
+                    <div class="project__body">
+                        <p class="project__label">Console game</p>
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>
+                            A C++ console game where you play against the computer. It stores the board
+                            in a 2-D array and validates every move so bad input can't crash it.
+                        </p>
+                        <ul class="tags"><li>C++</li><li>Console</li></ul>
+                        <a class="link-arrow" href="https://github.com/Bron222/TicTacToe" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -281,7 +301,7 @@
                         <li>Java</li><li>Quarkus</li><li>REST APIs</li><li>API testing</li>
                         <li>Google Cloud Run</li><li>Pub/Sub</li><li>Cloud Storage</li><li>Secret Manager</li>
                         <li>Microsoft SQL Server</li><li>Database migrations</li><li>CI/CD</li>
-                        <li>Azure DevOps</li><li>Git/GitHub</li><li>PowerShell</li><li>Agile</li>
+                        <li>Azure DevOps</li><li>Git/GitHub</li><li>PowerShell</li><li>Claude Code</li><li>Agile</li>
                     </ul>
                 </div>
                 <div class="card skill-group reveal">

@@ -678,7 +678,8 @@ ul {
     margin: 0;
 }
 
-.job__divider {
+.job__divider,
+.projects__group {
     font-family: var(--font-mono);
     font-size: 0.8rem;
     letter-spacing: 0.06em;
@@ -692,6 +693,14 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+}
+
+.projects--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects__group--first {
+    margin-top: 0;
 }
 
 .project {
