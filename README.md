@@ -27,13 +27,19 @@ I kept the stack simple on purpose, so the site loads fast, is easy to maintain 
 
 ```
 index.html            Page content and layout
+404.html              "Page not found" page that GitHub Pages shows for missing URLs
 styles.css            All styling, including the responsive and reduced-motion rules
 script.js             Navigation, scroll animations, card glow and email links
 credentials/          Degree and certification documents linked from the About section
 fonts/                Web fonts and their licenses (SIL Open Font License)
 images/
   profile.png         Profile photo
+  og-card.jpg         Preview image shown when the link is shared (1200x630)
   projects/           Project screenshots
+favicon.ico           Browser tab icon
+apple-touch-icon.png  iPhone home-screen and bookmark icon
+robots.txt            Tells search engines they may index the site
+sitemap.xml           Lists the site's pages for search engines
 CNAME                 Custom domain for GitHub Pages
 ```
 
