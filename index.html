@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security: only load scripts, styles, fonts and images from this site -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Bron Whitten | Software Engineer</title>
     <meta name="description" content="Bron Whitten is a backend software engineer in Birmingham, AL, building Java services on Google Cloud. Projects, experience and contact info.">
     <meta name="theme-color" content="#07090f">
@@ -17,10 +20,9 @@
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2307090f'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='38' fill='%235eead4'>B</text></svg>">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -35,8 +37,8 @@
 
     <header class="nav" id="top">
         <div class="nav__inner container">
-            <a class="nav__logo" href="#top" aria-label="Back to top">
-                <span class="nav__logo-mark">B</span><span class="nav__logo-text">Bron Whitten</span>
+            <a class="nav__logo" href="#top">
+                <span class="nav__logo-mark" aria-hidden="true">B</span><span class="nav__logo-text">Bron Whitten</span>
             </a>
             <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
                 <span></span><span></span>
@@ -197,7 +199,7 @@
             <div class="projects">
                 <article class="card project project--featured reveal">
                     <div class="project__media project__media--phone">
-                        <img src="images/projects/todolu.png" alt="Todolu's Today screen showing a task list" loading="lazy">
+                        <img src="images/projects/todolu.png" alt="Todolu's Today screen showing a task list" width="540" height="1200" loading="lazy">
                     </div>
                     <div class="project__body">
                         <p class="project__label">Mobile app · In development</p>
@@ -239,7 +241,7 @@
             <div class="projects projects--3">
                 <article class="card project reveal">
                     <div class="project__media">
-                        <img src="images/projects/ims.jpg" alt="Inventory Management System showing a stock table" loading="lazy">
+                        <img src="images/projects/ims.jpg" alt="Inventory Management System showing a stock table" width="1200" height="641" loading="lazy">
                     </div>
                     <div class="project__body">
                         <p class="project__label">Desktop app</p>
@@ -256,7 +258,7 @@
 
                 <article class="card project reveal">
                     <div class="project__media">
-                        <img src="images/projects/menuapp.jpg" alt="Menu App order and checkout windows" loading="lazy">
+                        <img src="images/projects/menuapp.jpg" alt="Menu App order and checkout windows" width="1200" height="748" loading="lazy">
                     </div>
                     <div class="project__body">
                         <p class="project__label">Desktop app</p>
@@ -272,7 +274,7 @@
 
                 <article class="card project reveal">
                     <div class="project__media">
-                        <img src="images/projects/tictactoe.png" alt="Tic-Tac-Toe game board in a console window" loading="lazy">
+                        <img src="images/projects/tictactoe.png" alt="Tic-Tac-Toe game board in a console window" width="1040" height="650" loading="lazy">
                     </div>
                     <div class="project__body">
                         <p class="project__label">Console game</p>

@@ -7,7 +7,7 @@ I'm Bron Whitten, a backend software engineer in Birmingham, AL. This site cover
 ## Built with
 
 - **HTML, CSS and JavaScript only.** No frameworks, no build step, no dependencies.
-- Google Fonts: Inter, Space Grotesk and JetBrains Mono
+- Fonts: Inter, Space Grotesk and JetBrains Mono, hosted with the site (no third-party requests)
 - Hosted on **GitHub Pages**, with a custom domain and HTTPS
 
 I kept the stack simple on purpose, so the site loads fast, is easy to maintain and has nothing to update or patch.
@@ -20,6 +20,8 @@ I kept the stack simple on purpose, so the site loads fast, is easy to maintain 
 - Respects the **reduced motion** setting for people who turn animations off
 - Accessible markup: a skip link, alt text, ARIA labels and keyboard support
 - The email address is put together by JavaScript, so it isn't plain text in the HTML for spam bots
+- A strict Content Security Policy: the page only loads scripts, styles, fonts and images from this site
+- Lighthouse scores of 99–100 for performance, accessibility, best practices and SEO
 
 ## Project structure
 
@@ -27,6 +29,7 @@ I kept the stack simple on purpose, so the site loads fast, is easy to maintain 
 index.html            Page content and layout
 styles.css            All styling, including the responsive and reduced-motion rules
 script.js             Navigation, scroll animations, card glow and email links
+fonts/                Web fonts and their licenses (SIL Open Font License)
 images/
   profile.png         Profile photo
   projects/           Project screenshots
