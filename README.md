@@ -29,6 +29,7 @@ I kept the stack simple on purpose, so the site loads fast, is easy to maintain 
 index.html            Page content and layout
 styles.css            All styling, including the responsive and reduced-motion rules
 script.js             Navigation, scroll animations, card glow and email links
+credentials/          Degree and certification documents linked from the About section
 fonts/                Web fonts and their licenses (SIL Open Font License)
 images/
   profile.png         Profile photo
