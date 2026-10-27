@@ -1213,8 +1213,21 @@ details[open] .stat__more {
 }
 
 @media (max-width: 520px) {
+    /* Only the sides: a "padding" shorthand here also wiped the footer's and sections' top/bottom spacing */
     .container {
-        padding: 0 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Keep the tighter phone rhythm between the hero and sections */
+    .hero {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .section {
+        padding-top: 72px;
+        padding-bottom: 0;
     }
 
     .card {
@@ -1236,10 +1249,6 @@ details[open] .stat__more {
 
     .job__head {
         flex-direction: column;
-    }
-
-    .section {
-        padding-top: 72px;
     }
 }
 
