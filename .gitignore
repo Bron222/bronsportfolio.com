@@ -1,0 +1,9 @@
+# Private notes
+NOTES.md
+
+# IDE settings
+.vs/
+
+# Large files (installers and music)
+other/*.exe
+audio/
