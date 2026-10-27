@@ -1046,7 +1046,7 @@ details[open] .stat__more {
 /* Contact */
 .contact {
     text-align: center;
-    padding: 64px 28px;
+    padding: 48px 28px;
     background:
         radial-gradient(circle at 50% 0%, rgba(94, 234, 212, 0.15), transparent 60%),
         var(--surface);
