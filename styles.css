@@ -1135,8 +1135,11 @@ details[open] .stat__more {
 }
 
 @media (max-width: 760px) {
+    /* Push the menu button to the right edge; the trim lines its bars up with the page gutter */
     .nav__toggle {
         display: block;
+        margin-left: auto;
+        margin-right: -10px;
     }
 
     .nav__links {
