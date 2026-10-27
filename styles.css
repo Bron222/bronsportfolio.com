@@ -490,6 +490,25 @@ ul {
     max-width: 560px;
 }
 
+.hero__focus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 0;
+    margin: -4px 0 28px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: var(--text);
+}
+
+.hero__focus li + li::before {
+    content: "/";
+    margin: 0 12px;
+    color: var(--accent);
+    text-shadow: var(--glow);
+}
+
 .hero__actions {
     display: flex;
     flex-wrap: wrap;
