@@ -880,7 +880,7 @@ details[open] .stat__more {
     transform: scale(1.04);
 }
 
-/* Phone-style frame for the Todolu screenshot */
+/* Phone-style frame for the Overwith screenshot */
 .project__media--phone {
     display: grid;
     place-items: center;
